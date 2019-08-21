@@ -18,6 +18,39 @@ function setEventListeners() {
   prev.addEventListener('click', movePrev);
 }
 
+
+// Next button handler
+function moveNext() {
+  // Check if moving
+  if (!moving) {
+    // If it's the last slide, reset to 0, else +1
+    if (slide === (totalItems - 1)) {
+      slide = 0;
+    } else {
+      slide++;
+    }
+    // Move carousel to updated slide
+    moveCarouselTo(slide);
+  }
+}
+// Previous button handler
+function movePrev() {
+  // Check if moving
+  if (!moving) {
+    // If it's the first slide, set as the last slide, else -1
+    if (slide === 0) {
+      slide = (totalItems - 1);
+    } else {
+      slide--;
+    }
+          
+    // Move carousel to updated slide
+    moveCarouselTo(slide);
+  }
+}
+
+
+
 }(document));
 
 
