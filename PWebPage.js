@@ -2,8 +2,15 @@
 
 //IIFE (Immediately Invoked Function Expression) is a JavaScript function to shield our code from the global scope
 !(function(d){
-//set classes
- function setInitialClasses() {
+  
+  var itemClassName = "carousel__image";
+    items = d.getElementsByClassName(itemClassName),
+    totalItems = items.length,
+    slide = 0,
+    moving = true;
+
+    // Set classes
+function setInitialClasses() {
   // Targets the previous, current, and next items
   // This assumes there are at least three items.
   items[totalItems - 1].classList.add("prev");
@@ -18,8 +25,7 @@ function setEventListeners() {
   prev.addEventListener('click', movePrev);
 }
 
-
-// Next button handler
+// Next navigation handler
 function moveNext() {
   // Check if moving
   if (!moving) {
@@ -33,7 +39,7 @@ function moveNext() {
     moveCarouselTo(slide);
   }
 }
-// Previous button handler
+// Previous navigation handler
 function movePrev() {
   // Check if moving
   if (!moving) {
@@ -110,8 +116,6 @@ function initCarousel() {
 
 // finally
 initCarousel();
-
 }(document));
-
 
 
