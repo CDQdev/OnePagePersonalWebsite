@@ -49,6 +49,17 @@ function movePrev() {
   }
 }
 
+function disableInteraction() {
+  // Set 'moving' to true for the same duration as our transition.
+  // (0.5s = 500ms)
+  
+  moving = true;
+  // setTimeout runs its function once after the given time
+  setTimeout(function(){
+    moving = false
+  }, 500);
+}
+
 
 
 }(document));
