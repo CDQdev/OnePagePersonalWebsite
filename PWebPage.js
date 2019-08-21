@@ -101,6 +101,16 @@ function moveCarouselTo(slide) {
   }
 }
 
+function initCarousel() {
+  setInitialClasses();
+  setEventListeners();
+  // Set moving to false so that the carousel becomes interactive
+  moving = false;
+}
+
+// finally
+initCarousel();
+
 }(document));
 
 
