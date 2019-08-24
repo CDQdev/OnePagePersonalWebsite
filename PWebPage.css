@@ -2,10 +2,16 @@
 	background-color: red;
 }*/
 
+
+
+/*carousel css start*/
 .carousel-wrapper {
   /*overflow is clipped and width 90% of viewport*/
   overflow: hidden;
-  width: 90%;
+  width: 45%;
+  border: 5px solid black;/*adds border and color of border*/
+  margin: 0 auto; /*centers item*/
+  background-color: #000;
 }
 
 .carousel-wrapper * {
@@ -90,4 +96,85 @@ transform: rotate(270deg);
 .carousel__button--next::after {
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+/*End of carousel styling*/
+
+/*enlarge and color name*/
+span.name {
+  color: red;
+  font-size: 3em;
+}
+/*Background color*/
+body{
+  background: #42f59e;
+  color: #7e42f5;
+  font-family: tahoma;
+  font-size: 1.5em; /*1.5 em equals 15 px*/ 
+
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainHeader {
+  height: auto;
+  background: #e09e24;
+}
+
+#mainFooter {
+  background-color: #e09e24;
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.sloganHolder {
+  height: auto;
+  background: #7ce01d;
+}
+
+#content-wrap {
+  width: 100%;
+  margin: 0 auto; /*centers container*/
+  /*background: #000 ;
+  */padding-bottom: 3rem;
+  }
+
+  #container {
+    min-height: 100vh;
+    position: relative;
+  }
+
+h1, h2 {
+  text-align: center;
+}
+
+.gitHub-icon {
+  float:right;
+}
+
+.yT {
+position: relative;
+width: 45%;
+border: 0;
+margin: 0 auto;
+padding-top: 40px;
+overflow: hidden;
+}
+
+.yT iframe {
+  position: auto;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+
+.gitHub-res {
+  color: #000;
 }
