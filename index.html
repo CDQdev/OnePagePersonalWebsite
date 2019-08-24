@@ -2,27 +2,72 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="PWebPage.css">
+  <script src="https://kit.fontawesome.com/a171437872.js"></script><!--script for font awesome kit-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>My Personal Website</title>
 </head>
 <body>
+<header class="mainHeader">
+      <div class="navigationHolder">
+        <div class="logoParent">
+          <h1>CDQdev</h1>
+        </div>
+        <div class="gitHub-icon">
+          <!--link to github-->
+          <a href="https://github.com/CDQdev"><i class="fab fa-github fa-3x"></i></a>
+        </div>
+      </div>
+   </header>
 
-<h1>Hello, World!</h1>
-<h2>My name is Charles Quartey</h2>
 
+<div class="sloganHolder">
+      <section class="slogan">
+        <h1>Hello, World!</h1>
+<h2>My name is <span class="name">Charles Quartey</span></h2>
+      </section>
+</div>
 
+<main id="container" >
+<div id="content-wrap">
+<!--carousel set up-->
 <div class="carousel-wrapper">
   <div class="carousel">
     <img class="carousel__image initial" src="images/img_1.jpg">
     <img class="carousel__image" src="images/img_2.jpg">
     <img class="carousel__image" src="images/img_3.jpg">
     <img class="carousel__image" src="images/img_4.jpg">
-    <img class="carousel__image" src="images/img_5.jpg">
-      
+    <img class="carousel__image" src="images/img_5.jpg">  
     <!--click events (buttons) to be used with javascript -->   
     <div class="carousel__button--next"></div>
     <div class="carousel__button--prev"></div>
   </div>
 </div>
+
+
+<!--embed youtube video set height and width 100%-->
+<div class="yT">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wVbcRvz5KIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!--link to repository included-->
+<div class="gitHub-res">
+  <p>To see code for this webpage's <a href="https://github.com/CDQdev/OnePagePersonalWebsite">Repository</a> click!</p>
+
+</div>
+
+
+
+</div>
+<footer id="mainFooter">
+  <small>
+  &copy; <a href="index.html">CDQdev</a>
+  <time>2019</time>
+  <author>Charles Quartey</author>
+  <p>Contact email: <a href="mailto:charles@charlesdquartey.com">charles@charlesdquartey.com</a>
+  </p>
+</small>
+</footer>
+</main>
+
 
 <script type="text/javascript" src="PWebPage.js"></script>
 </body>
