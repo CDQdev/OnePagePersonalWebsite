@@ -36,10 +36,6 @@
 
 }
 
-.carousel__image.initial {
-  /*rotate initial image*/
-transform: rotate(270deg);
-}
 
 .carousel__image.initial,
 .carousel__image.active {
