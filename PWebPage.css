@@ -102,7 +102,7 @@ transform: rotate(270deg);
 /*enlarge and color name*/
 span.name {
   color: red;
-  font-size: 3em;
+  font-size: 3rem;
 }
 /*Background color*/
 body{
@@ -126,12 +126,11 @@ body{
 
 #mainFooter {
   background-color: #e09e24;
-  height: 3rem;
+  height: 4rem;
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
-
 
 .sloganHolder {
   height: auto;
